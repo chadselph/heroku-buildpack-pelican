@@ -12,7 +12,10 @@ ENV_DIR=$3
 CACHED_DIRS=".heroku"
 WORKING_DIR=$(pwd)
 
-#rm -fr $CACHE_DIR
+# If PLATFORM is undefined or defined as HEROKU then remove cache directory.
+if [[ -z ${PLATFORM+HEROKU} == "HEROKU" ]]; then
+    rm -fr $CACHE_DIR
+fi
 mkdir -p $CACHE_DIR
 
 # Versions.
