@@ -18,8 +18,8 @@ mkdir -p $CACHE_DIR
 # Versions.
 PYTHON_VERSION="python-3.6.10"
 PYTHON_STACK="heroku-18"
-NGINX_VERSION="nginx-1.7.2"
-PCRE_VERSION='pcre-8.36'
+NGINX_VERSION="nginx-1.16.1"
+PCRE_VERSION="pcre-8.42"
 source $BIN_DIR/utils
 
 mkdir -p $BUILD_DIR/local/sbin
